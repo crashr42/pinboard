@@ -3,7 +3,7 @@
 {% block title %}{{ title }} — {{ parent() }}{% endblock %}
 {% block content %}
     {% include '_server_menu.html.twig' with { title: title, server_name: server_name, hostname: hostname, hosts: hosts } %}
-    <div class="row">
+    <div class="row-fluid">
       <div class="span12">
         <p class="lead">Heavy pages for a last day</p>
         {% if pages|length > 0 %}

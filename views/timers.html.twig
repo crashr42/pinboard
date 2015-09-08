@@ -18,7 +18,7 @@
     </ul>
     {% include '_timers_period_menu.html.twig' with { server_name: server_name, hostname: hostname, period: period, periods: periods, server_filter: server_filter } %}
 
-    <div class="row">
+    <div class="row-fluid">
     {% if charts|length > 0 %}
       {% for chart_key, chart in charts %}
       <div class="span12">
