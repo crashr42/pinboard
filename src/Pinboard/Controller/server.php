@@ -1141,8 +1141,7 @@ function getLivePages($conn, $serverName, $hostName, $limit = 50, array $filter)
             server_name = :server_name
             ' . $hostCondition . '
             ' . $idCondition . '
-        ORDER BY
-            timestamp DESC, id DESC
+        ORDER BY id DESC
         LIMIT
             ' . $limit . '
     ';
