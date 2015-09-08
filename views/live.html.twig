@@ -27,7 +27,6 @@
                 </div>
             </div>
             <input type="hidden" name="last_id" />
-            <input type="hidden" name="last_timestamp" />
         </form>
     </div>
     <div class="row-fluid">
@@ -251,8 +250,7 @@
             updating = false,
             timerHandler;
 
-        $('#filter-form input[name=last_id]').val({{ last_id }});
-        $('#filter-form input[name=last_timestamp]').val({{ last_timestamp }});
+        $('#filter-form input[name=last_id]').val({{ last_id }});x
 
         $(function() {
             if (liveStatus) {
@@ -308,7 +306,6 @@
                         cpuChart.validateData();
 
                         $('#filter-form input[name=last_id]').val(data.pages[0].id);
-                        $('#filter-form input[name=last_timestamp]').val(data.pages[0].timestamp);
                     }
 
                     updating = false;
